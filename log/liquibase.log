@@ -1,0 +1,336 @@
+[2023-05-18 12:41:29] GRAVE [liquibase.integration] The file ..scriptschangelog_20230518-123517.sql was not found in the configured search path:
+    - C:\Varios\Vueling\liquibase\modelo_SS\scripts
+More locations can be added with the 'searchPath' parameter.
+liquibase.exception.CommandExecutionException: liquibase.exception.ChangeLogParseException: java.io.FileNotFoundException: The file ..scriptschangelog_20230518-123517.sql was not found in the configured search path:
+    - C:\Varios\Vueling\liquibase\modelo_SS\scripts
+More locations can be added with the 'searchPath' parameter.
+	at liquibase.command.CommandScope.execute(CommandScope.java:235)
+	at liquibase.integration.commandline.CommandRunner.call(CommandRunner.java:55)
+	at liquibase.integration.commandline.CommandRunner.call(CommandRunner.java:24)
+	at picocli.CommandLine.executeUserObject(CommandLine.java:2041)
+	at picocli.CommandLine.access$1500(CommandLine.java:148)
+	at picocli.CommandLine$RunLast.executeUserObjectOfLastSubcommandWithSameParent(CommandLine.java:2461)
+	at picocli.CommandLine$RunLast.handle(CommandLine.java:2453)
+	at picocli.CommandLine$RunLast.handle(CommandLine.java:2415)
+	at picocli.CommandLine$AbstractParseResultHandler.execute(CommandLine.java:2273)
+	at picocli.CommandLine$RunLast.execute(CommandLine.java:2417)
+	at picocli.CommandLine.execute(CommandLine.java:2170)
+	at liquibase.integration.commandline.LiquibaseCommandLine.lambda$null$2(LiquibaseCommandLine.java:383)
+	at liquibase.Scope.child(Scope.java:203)
+	at liquibase.Scope.child(Scope.java:179)
+	at liquibase.integration.commandline.LiquibaseCommandLine.lambda$execute$3(LiquibaseCommandLine.java:358)
+	at liquibase.Scope.child(Scope.java:203)
+	at liquibase.Scope.child(Scope.java:179)
+	at liquibase.integration.commandline.LiquibaseCommandLine.execute(LiquibaseCommandLine.java:356)
+	at liquibase.integration.commandline.LiquibaseCommandLine.main(LiquibaseCommandLine.java:93)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at liquibase.integration.commandline.LiquibaseLauncher.main(LiquibaseLauncher.java:107)
+Caused by: liquibase.exception.ChangeLogParseException: java.io.FileNotFoundException: The file ..scriptschangelog_20230518-123517.sql was not found in the configured search path:
+    - C:\Varios\Vueling\liquibase\modelo_SS\scripts
+More locations can be added with the 'searchPath' parameter.
+	at liquibase.parser.core.sql.SqlChangeLogParser.parse(SqlChangeLogParser.java:42)
+	at liquibase.Liquibase.getDatabaseChangeLog(Liquibase.java:356)
+	at liquibase.Liquibase.getDatabaseChangeLog(Liquibase.java:340)
+	at liquibase.Liquibase.lambda$listUnrunChangeSets$16(Liquibase.java:1281)
+	at liquibase.Scope.lambda$child$0(Scope.java:194)
+	at liquibase.Scope.child(Scope.java:203)
+	at liquibase.Scope.child(Scope.java:193)
+	at liquibase.Scope.child(Scope.java:172)
+	at liquibase.Liquibase.runInScope(Liquibase.java:1618)
+	at liquibase.Liquibase.listUnrunChangeSets(Liquibase.java:1279)
+	at liquibase.Liquibase.reportStatus(Liquibase.java:1350)
+	at liquibase.integration.commandline.Main.doMigration(Main.java:1681)
+	at liquibase.integration.commandline.Main$1.lambda$run$2(Main.java:417)
+	at liquibase.Scope.lambda$child$0(Scope.java:194)
+	at liquibase.Scope.child(Scope.java:203)
+	at liquibase.Scope.child(Scope.java:193)
+	at liquibase.Scope.child(Scope.java:172)
+	at liquibase.integration.commandline.Main$1.run(Main.java:416)
+	at liquibase.integration.commandline.Main$1.run(Main.java:234)
+	at liquibase.Scope.child(Scope.java:203)
+	at liquibase.Scope.child(Scope.java:179)
+	at liquibase.integration.commandline.Main.run(Main.java:234)
+	at liquibase.command.AbstractCliWrapperCommandStep.run(AbstractCliWrapperCommandStep.java:32)
+	at liquibase.command.CommandScope.execute(CommandScope.java:212)
+	... 23 more
+Caused by: java.io.FileNotFoundException: The file ..scriptschangelog_20230518-123517.sql was not found in the configured search path:
+    - C:\Varios\Vueling\liquibase\modelo_SS\scripts
+More locations can be added with the 'searchPath' parameter.
+	at liquibase.resource.ResourceAccessor.getExisting(ResourceAccessor.java:213)
+	at liquibase.parser.core.sql.SqlChangeLogParser.parse(SqlChangeLogParser.java:38)
+	... 46 more
+
+[2023-05-18 12:41:41] GRAVE [liquibase.integration] The file ..scriptschangelog_20230518-123517.sql was not found in the configured search path:
+    - C:\Varios\Vueling\liquibase\modelo_SS\scripts
+More locations can be added with the 'searchPath' parameter.
+liquibase.exception.CommandExecutionException: liquibase.exception.ChangeLogParseException: java.io.FileNotFoundException: The file ..scriptschangelog_20230518-123517.sql was not found in the configured search path:
+    - C:\Varios\Vueling\liquibase\modelo_SS\scripts
+More locations can be added with the 'searchPath' parameter.
+	at liquibase.command.CommandScope.execute(CommandScope.java:235)
+	at liquibase.integration.commandline.CommandRunner.call(CommandRunner.java:55)
+	at liquibase.integration.commandline.CommandRunner.call(CommandRunner.java:24)
+	at picocli.CommandLine.executeUserObject(CommandLine.java:2041)
+	at picocli.CommandLine.access$1500(CommandLine.java:148)
+	at picocli.CommandLine$RunLast.executeUserObjectOfLastSubcommandWithSameParent(CommandLine.java:2461)
+	at picocli.CommandLine$RunLast.handle(CommandLine.java:2453)
+	at picocli.CommandLine$RunLast.handle(CommandLine.java:2415)
+	at picocli.CommandLine$AbstractParseResultHandler.execute(CommandLine.java:2273)
+	at picocli.CommandLine$RunLast.execute(CommandLine.java:2417)
+	at picocli.CommandLine.execute(CommandLine.java:2170)
+	at liquibase.integration.commandline.LiquibaseCommandLine.lambda$null$2(LiquibaseCommandLine.java:383)
+	at liquibase.Scope.child(Scope.java:203)
+	at liquibase.Scope.child(Scope.java:179)
+	at liquibase.integration.commandline.LiquibaseCommandLine.lambda$execute$3(LiquibaseCommandLine.java:358)
+	at liquibase.Scope.child(Scope.java:203)
+	at liquibase.Scope.child(Scope.java:179)
+	at liquibase.integration.commandline.LiquibaseCommandLine.execute(LiquibaseCommandLine.java:356)
+	at liquibase.integration.commandline.LiquibaseCommandLine.main(LiquibaseCommandLine.java:93)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at liquibase.integration.commandline.LiquibaseLauncher.main(LiquibaseLauncher.java:107)
+Caused by: liquibase.exception.ChangeLogParseException: java.io.FileNotFoundException: The file ..scriptschangelog_20230518-123517.sql was not found in the configured search path:
+    - C:\Varios\Vueling\liquibase\modelo_SS\scripts
+More locations can be added with the 'searchPath' parameter.
+	at liquibase.parser.core.sql.SqlChangeLogParser.parse(SqlChangeLogParser.java:42)
+	at liquibase.Liquibase.getDatabaseChangeLog(Liquibase.java:356)
+	at liquibase.Liquibase.validate(Liquibase.java:1557)
+	at liquibase.integration.commandline.Main.doMigration(Main.java:1693)
+	at liquibase.integration.commandline.Main$1.lambda$run$2(Main.java:417)
+	at liquibase.Scope.lambda$child$0(Scope.java:194)
+	at liquibase.Scope.child(Scope.java:203)
+	at liquibase.Scope.child(Scope.java:193)
+	at liquibase.Scope.child(Scope.java:172)
+	at liquibase.integration.commandline.Main$1.run(Main.java:416)
+	at liquibase.integration.commandline.Main$1.run(Main.java:234)
+	at liquibase.Scope.child(Scope.java:203)
+	at liquibase.Scope.child(Scope.java:179)
+	at liquibase.integration.commandline.Main.run(Main.java:234)
+	at liquibase.command.AbstractCliWrapperCommandStep.run(AbstractCliWrapperCommandStep.java:32)
+	at liquibase.command.CommandScope.execute(CommandScope.java:212)
+	... 23 more
+Caused by: java.io.FileNotFoundException: The file ..scriptschangelog_20230518-123517.sql was not found in the configured search path:
+    - C:\Varios\Vueling\liquibase\modelo_SS\scripts
+More locations can be added with the 'searchPath' parameter.
+	at liquibase.resource.ResourceAccessor.getExisting(ResourceAccessor.java:213)
+	at liquibase.parser.core.sql.SqlChangeLogParser.parse(SqlChangeLogParser.java:38)
+	... 38 more
+
+[2023-05-18 12:43:46] GRAVE [liquibase.integration] The file ..scriptschangelog_20230518-124337.sql was not found in the configured search path:
+    - C:\Varios\Vueling\liquibase\modelo_SS\scripts
+More locations can be added with the 'searchPath' parameter.
+liquibase.exception.CommandExecutionException: liquibase.exception.ChangeLogParseException: java.io.FileNotFoundException: The file ..scriptschangelog_20230518-124337.sql was not found in the configured search path:
+    - C:\Varios\Vueling\liquibase\modelo_SS\scripts
+More locations can be added with the 'searchPath' parameter.
+	at liquibase.command.CommandScope.execute(CommandScope.java:235)
+	at liquibase.integration.commandline.CommandRunner.call(CommandRunner.java:55)
+	at liquibase.integration.commandline.CommandRunner.call(CommandRunner.java:24)
+	at picocli.CommandLine.executeUserObject(CommandLine.java:2041)
+	at picocli.CommandLine.access$1500(CommandLine.java:148)
+	at picocli.CommandLine$RunLast.executeUserObjectOfLastSubcommandWithSameParent(CommandLine.java:2461)
+	at picocli.CommandLine$RunLast.handle(CommandLine.java:2453)
+	at picocli.CommandLine$RunLast.handle(CommandLine.java:2415)
+	at picocli.CommandLine$AbstractParseResultHandler.execute(CommandLine.java:2273)
+	at picocli.CommandLine$RunLast.execute(CommandLine.java:2417)
+	at picocli.CommandLine.execute(CommandLine.java:2170)
+	at liquibase.integration.commandline.LiquibaseCommandLine.lambda$null$2(LiquibaseCommandLine.java:383)
+	at liquibase.Scope.child(Scope.java:203)
+	at liquibase.Scope.child(Scope.java:179)
+	at liquibase.integration.commandline.LiquibaseCommandLine.lambda$execute$3(LiquibaseCommandLine.java:358)
+	at liquibase.Scope.child(Scope.java:203)
+	at liquibase.Scope.child(Scope.java:179)
+	at liquibase.integration.commandline.LiquibaseCommandLine.execute(LiquibaseCommandLine.java:356)
+	at liquibase.integration.commandline.LiquibaseCommandLine.main(LiquibaseCommandLine.java:93)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at liquibase.integration.commandline.LiquibaseLauncher.main(LiquibaseLauncher.java:107)
+Caused by: liquibase.exception.ChangeLogParseException: java.io.FileNotFoundException: The file ..scriptschangelog_20230518-124337.sql was not found in the configured search path:
+    - C:\Varios\Vueling\liquibase\modelo_SS\scripts
+More locations can be added with the 'searchPath' parameter.
+	at liquibase.parser.core.sql.SqlChangeLogParser.parse(SqlChangeLogParser.java:42)
+	at liquibase.Liquibase.getDatabaseChangeLog(Liquibase.java:356)
+	at liquibase.Liquibase.getDatabaseChangeLog(Liquibase.java:340)
+	at liquibase.Liquibase.lambda$listUnrunChangeSets$16(Liquibase.java:1281)
+	at liquibase.Scope.lambda$child$0(Scope.java:194)
+	at liquibase.Scope.child(Scope.java:203)
+	at liquibase.Scope.child(Scope.java:193)
+	at liquibase.Scope.child(Scope.java:172)
+	at liquibase.Liquibase.runInScope(Liquibase.java:1618)
+	at liquibase.Liquibase.listUnrunChangeSets(Liquibase.java:1279)
+	at liquibase.Liquibase.reportStatus(Liquibase.java:1350)
+	at liquibase.integration.commandline.Main.doMigration(Main.java:1681)
+	at liquibase.integration.commandline.Main$1.lambda$run$2(Main.java:417)
+	at liquibase.Scope.lambda$child$0(Scope.java:194)
+	at liquibase.Scope.child(Scope.java:203)
+	at liquibase.Scope.child(Scope.java:193)
+	at liquibase.Scope.child(Scope.java:172)
+	at liquibase.integration.commandline.Main$1.run(Main.java:416)
+	at liquibase.integration.commandline.Main$1.run(Main.java:234)
+	at liquibase.Scope.child(Scope.java:203)
+	at liquibase.Scope.child(Scope.java:179)
+	at liquibase.integration.commandline.Main.run(Main.java:234)
+	at liquibase.command.AbstractCliWrapperCommandStep.run(AbstractCliWrapperCommandStep.java:32)
+	at liquibase.command.CommandScope.execute(CommandScope.java:212)
+	... 23 more
+Caused by: java.io.FileNotFoundException: The file ..scriptschangelog_20230518-124337.sql was not found in the configured search path:
+    - C:\Varios\Vueling\liquibase\modelo_SS\scripts
+More locations can be added with the 'searchPath' parameter.
+	at liquibase.resource.ResourceAccessor.getExisting(ResourceAccessor.java:213)
+	at liquibase.parser.core.sql.SqlChangeLogParser.parse(SqlChangeLogParser.java:38)
+	... 46 more
+
+[2023-05-22 11:30:06] GRAVE [liquibase.integration] La consulta ha superado el tiempo de espera.
+liquibase.exception.CommandExecutionException: liquibase.exception.UnexpectedLiquibaseException: liquibase.exception.DatabaseException: java.sql.SQLTimeoutException: La consulta ha superado el tiempo de espera.
+	at liquibase.command.CommandScope.execute(CommandScope.java:235)
+	at liquibase.integration.commandline.CommandRunner.call(CommandRunner.java:55)
+	at liquibase.integration.commandline.CommandRunner.call(CommandRunner.java:24)
+	at picocli.CommandLine.executeUserObject(CommandLine.java:2041)
+	at picocli.CommandLine.access$1500(CommandLine.java:148)
+	at picocli.CommandLine$RunLast.executeUserObjectOfLastSubcommandWithSameParent(CommandLine.java:2461)
+	at picocli.CommandLine$RunLast.handle(CommandLine.java:2453)
+	at picocli.CommandLine$RunLast.handle(CommandLine.java:2415)
+	at picocli.CommandLine$AbstractParseResultHandler.execute(CommandLine.java:2273)
+	at picocli.CommandLine$RunLast.execute(CommandLine.java:2417)
+	at picocli.CommandLine.execute(CommandLine.java:2170)
+	at liquibase.integration.commandline.LiquibaseCommandLine.lambda$null$2(LiquibaseCommandLine.java:383)
+	at liquibase.Scope.child(Scope.java:203)
+	at liquibase.Scope.child(Scope.java:179)
+	at liquibase.integration.commandline.LiquibaseCommandLine.lambda$execute$3(LiquibaseCommandLine.java:358)
+	at liquibase.Scope.child(Scope.java:203)
+	at liquibase.Scope.child(Scope.java:179)
+	at liquibase.integration.commandline.LiquibaseCommandLine.execute(LiquibaseCommandLine.java:356)
+	at liquibase.integration.commandline.LiquibaseCommandLine.main(LiquibaseCommandLine.java:93)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at liquibase.integration.commandline.LiquibaseLauncher.main(LiquibaseLauncher.java:107)
+Caused by: liquibase.exception.UnexpectedLiquibaseException: liquibase.exception.DatabaseException: java.sql.SQLTimeoutException: La consulta ha superado el tiempo de espera.
+	at liquibase.changelog.StandardChangeLogHistoryService.init(StandardChangeLogHistoryService.java:114)
+	at liquibase.command.core.helpers.DatabaseChangelogCommandStep.checkLiquibaseTables(DatabaseChangelogCommandStep.java:106)
+	at liquibase.command.core.helpers.DatabaseChangelogCommandStep.run(DatabaseChangelogCommandStep.java:78)
+	at liquibase.command.CommandScope.execute(CommandScope.java:212)
+	... 23 more
+Caused by: liquibase.exception.DatabaseException: java.sql.SQLTimeoutException: La consulta ha superado el tiempo de espera.
+	at liquibase.snapshot.ResultSetCache.get(ResultSetCache.java:98)
+	at liquibase.snapshot.JdbcDatabaseSnapshot$CachingDatabaseMetaData.getColumns(JdbcDatabaseSnapshot.java:322)
+	at liquibase.snapshot.jvm.ColumnSnapshotGenerator.addTo(ColumnSnapshotGenerator.java:161)
+	at liquibase.snapshot.jvm.JdbcSnapshotGenerator.snapshot(JdbcSnapshotGenerator.java:78)
+	at liquibase.snapshot.SnapshotGeneratorChain.snapshot(SnapshotGeneratorChain.java:49)
+	at liquibase.snapshot.DatabaseSnapshot.include(DatabaseSnapshot.java:313)
+	at liquibase.snapshot.DatabaseSnapshot.init(DatabaseSnapshot.java:106)
+	at liquibase.snapshot.DatabaseSnapshot.<init>(DatabaseSnapshot.java:59)
+	at liquibase.snapshot.JdbcDatabaseSnapshot.<init>(JdbcDatabaseSnapshot.java:34)
+	at liquibase.snapshot.SnapshotGeneratorFactory.createSnapshot(SnapshotGeneratorFactory.java:214)
+	at liquibase.snapshot.SnapshotGeneratorFactory.createSnapshot(SnapshotGeneratorFactory.java:243)
+	at liquibase.snapshot.SnapshotGeneratorFactory.getDatabaseChangeLogTable(SnapshotGeneratorFactory.java:251)
+	at liquibase.changelog.StandardChangeLogHistoryService.init(StandardChangeLogHistoryService.java:111)
+	... 26 more
+Caused by: java.sql.SQLTimeoutException: La consulta ha superado el tiempo de espera.
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeStatement(SQLServerStatement.java:249)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeQuery(SQLServerStatement.java:736)
+	at liquibase.snapshot.ResultSetCache$ResultSetExtractor.executeAndExtract(ResultSetCache.java:268)
+	at liquibase.snapshot.ResultSetCache$ResultSetExtractor.executeAndExtract(ResultSetCache.java:255)
+	at liquibase.snapshot.JdbcDatabaseSnapshot$CachingDatabaseMetaData$GetColumnResultSetCache.mssqlQuery(JdbcDatabaseSnapshot.java:652)
+	at liquibase.snapshot.JdbcDatabaseSnapshot$CachingDatabaseMetaData$GetColumnResultSetCache.fastFetchQuery(JdbcDatabaseSnapshot.java:385)
+	at liquibase.snapshot.ResultSetCache$SingleResultSetExtractor.fastFetch(ResultSetCache.java:358)
+	at liquibase.snapshot.ResultSetCache.get(ResultSetCache.java:69)
+	... 38 more
+
+[2023-05-22 11:31:56] GRAVE [liquibase.changelog] ChangeSet config\init.sql::raw::includeAll encountered an exception.
+[2023-05-22 11:31:56] GRAVE [liquibase.integration] Migration failed for changeset config\init.sql::raw::includeAll:
+     Reason: liquibase.exception.DatabaseException: Incorrect syntax near the keyword 'FROM'. [Failed SQL: (156) SELECT TOP (10) 
+  FROM [sys].[tables]]
+liquibase.exception.CommandExecutionException: liquibase.exception.LiquibaseException: liquibase.exception.MigrationFailedException: Migration failed for changeset config\init.sql::raw::includeAll:
+     Reason: liquibase.exception.DatabaseException: Incorrect syntax near the keyword 'FROM'. [Failed SQL: (156) SELECT TOP (10) 
+  FROM [sys].[tables]]
+	at liquibase.command.CommandScope.execute(CommandScope.java:235)
+	at com.datical.liquibase.ext.command.ProUpdateCommandStep.run(Unknown Source)
+	at liquibase.command.CommandScope.execute(CommandScope.java:212)
+	at liquibase.integration.commandline.CommandRunner.call(CommandRunner.java:55)
+	at liquibase.integration.commandline.CommandRunner.call(CommandRunner.java:24)
+	at picocli.CommandLine.executeUserObject(CommandLine.java:2041)
+	at picocli.CommandLine.access$1500(CommandLine.java:148)
+	at picocli.CommandLine$RunLast.executeUserObjectOfLastSubcommandWithSameParent(CommandLine.java:2461)
+	at picocli.CommandLine$RunLast.handle(CommandLine.java:2453)
+	at picocli.CommandLine$RunLast.handle(CommandLine.java:2415)
+	at picocli.CommandLine$AbstractParseResultHandler.execute(CommandLine.java:2273)
+	at picocli.CommandLine$RunLast.execute(CommandLine.java:2417)
+	at picocli.CommandLine.execute(CommandLine.java:2170)
+	at liquibase.integration.commandline.LiquibaseCommandLine.lambda$null$2(LiquibaseCommandLine.java:383)
+	at liquibase.Scope.child(Scope.java:203)
+	at liquibase.Scope.child(Scope.java:179)
+	at liquibase.integration.commandline.LiquibaseCommandLine.lambda$execute$3(LiquibaseCommandLine.java:358)
+	at liquibase.Scope.child(Scope.java:203)
+	at liquibase.Scope.child(Scope.java:179)
+	at liquibase.integration.commandline.LiquibaseCommandLine.execute(LiquibaseCommandLine.java:356)
+	at liquibase.integration.commandline.LiquibaseCommandLine.main(LiquibaseCommandLine.java:93)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at liquibase.integration.commandline.LiquibaseLauncher.main(LiquibaseLauncher.java:107)
+Caused by: liquibase.exception.LiquibaseException: liquibase.exception.MigrationFailedException: Migration failed for changeset config\init.sql::raw::includeAll:
+     Reason: liquibase.exception.DatabaseException: Incorrect syntax near the keyword 'FROM'. [Failed SQL: (156) SELECT TOP (10) 
+  FROM [sys].[tables]]
+	at liquibase.changelog.ChangeLogIterator.run(ChangeLogIterator.java:123)
+	at liquibase.command.core.AbstractUpdateCommandStep.lambda$run$0(AbstractUpdateCommandStep.java:102)
+	at liquibase.Scope.lambda$child$0(Scope.java:194)
+	at liquibase.Scope.child(Scope.java:203)
+	at liquibase.Scope.child(Scope.java:193)
+	at liquibase.Scope.child(Scope.java:172)
+	at liquibase.command.core.AbstractUpdateCommandStep.run(AbstractUpdateCommandStep.java:99)
+	... 25 more
+Caused by: liquibase.exception.MigrationFailedException: Migration failed for changeset config\init.sql::raw::includeAll:
+     Reason: liquibase.exception.DatabaseException: Incorrect syntax near the keyword 'FROM'. [Failed SQL: (156) SELECT TOP (10) 
+  FROM [sys].[tables]]
+	at liquibase.changelog.ChangeSet.execute(ChangeSet.java:761)
+	at liquibase.changelog.visitor.UpdateVisitor.visit(UpdateVisitor.java:61)
+	at liquibase.changelog.ChangeLogIterator$2.lambda$null$0(ChangeLogIterator.java:111)
+	at liquibase.Scope.lambda$child$0(Scope.java:194)
+	at liquibase.Scope.child(Scope.java:203)
+	at liquibase.Scope.child(Scope.java:193)
+	at liquibase.Scope.child(Scope.java:172)
+	at liquibase.changelog.ChangeLogIterator$2.lambda$run$1(ChangeLogIterator.java:111)
+	at liquibase.Scope.lambda$child$0(Scope.java:194)
+	at liquibase.Scope.child(Scope.java:203)
+	at liquibase.Scope.child(Scope.java:193)
+	at liquibase.Scope.child(Scope.java:172)
+	at liquibase.Scope.child(Scope.java:260)
+	at liquibase.changelog.ChangeLogIterator$2.run(ChangeLogIterator.java:94)
+	at liquibase.Scope.lambda$child$0(Scope.java:194)
+	at liquibase.Scope.child(Scope.java:203)
+	at liquibase.Scope.child(Scope.java:193)
+	at liquibase.Scope.child(Scope.java:172)
+	at liquibase.Scope.child(Scope.java:260)
+	at liquibase.Scope.child(Scope.java:264)
+	at liquibase.changelog.ChangeLogIterator.run(ChangeLogIterator.java:68)
+	... 31 more
+Caused by: liquibase.exception.DatabaseException: Incorrect syntax near the keyword 'FROM'. [Failed SQL: (156) SELECT TOP (10) 
+  FROM [sys].[tables]]
+	at liquibase.executor.jvm.JdbcExecutor$ExecuteStatementCallback.doInStatement(JdbcExecutor.java:445)
+	at liquibase.executor.jvm.JdbcExecutor.execute(JdbcExecutor.java:77)
+	at liquibase.executor.jvm.JdbcExecutor.execute(JdbcExecutor.java:160)
+	at liquibase.database.AbstractJdbcDatabase.execute(AbstractJdbcDatabase.java:1287)
+	at liquibase.database.AbstractJdbcDatabase.executeStatements(AbstractJdbcDatabase.java:1269)
+	at liquibase.changelog.ChangeSet.execute(ChangeSet.java:718)
+	... 51 more
+Caused by: com.microsoft.sqlserver.jdbc.SQLServerException: Incorrect syntax near the keyword 'FROM'.
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(SQLServerException.java:265)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.getNextResult(SQLServerStatement.java:1695)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.doExecuteStatement(SQLServerStatement.java:920)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement$StmtExecCmd.doExecute(SQLServerStatement.java:814)
+	at com.microsoft.sqlserver.jdbc.TDSCommand.execute(IOBuffer.java:7685)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeCommand(SQLServerConnection.java:4048)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeCommand(SQLServerStatement.java:272)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeStatement(SQLServerStatement.java:246)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.execute(SQLServerStatement.java:787)
+	at liquibase.executor.jvm.JdbcExecutor$ExecuteStatementCallback.doInStatement(JdbcExecutor.java:441)
+	... 56 more
+
